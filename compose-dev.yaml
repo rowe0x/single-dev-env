@@ -4,6 +4,7 @@ services:
     - sleep
     - infinity
     image: docker/dev-environments-go:stable-1
+    privileged: true
     init: true
     volumes:
     - type: bind
