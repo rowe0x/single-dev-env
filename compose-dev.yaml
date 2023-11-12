@@ -1,9 +1,11 @@
 services:
   app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     entrypoint:
     - sleep
     - infinity
-    image: docker/dev-environments-go:stable-1
     privileged: true
     init: true
     volumes:
