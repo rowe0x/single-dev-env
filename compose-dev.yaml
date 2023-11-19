@@ -13,4 +13,7 @@ services:
     - type: bind
       source: /var/run/docker.sock
       target: /var/run/docker.sock
-    - volume-dev:/workspace
+    - dev:/workspace
+volumes:
+  dev
+
